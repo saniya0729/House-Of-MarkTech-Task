@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.desktop-menu-items a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+#menu-items a {
+  text-decoration: none;
+}
+a button {
+  font-family: sans-serif;
+}
+
+
+.menu-toggle {
+  color: rgba(181, 0, 255, 255);
+}
+.nav-items a:hover {
+  color: #b500ff;
+}
+
+.contact-btn {
+  font-weight: 700;
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(152, 4, 232, 255);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.hero-heading {
+  font-weight: 700;
+  margin-bottom: 2%;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero-static-heading {
+  color: rgba(181, 0, 255, 255);
+}
+
+.hero-img {
+  
+  animation: fadeInFromTop 0.5s linear forwards, floating ease 4s infinite;
+}
+keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+  75% {
+    transform: translate(0%, 5%) rotate(360deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}
+#typing-effect {
+  font-size: 2rem;
+  color: #333;
+  border-right: 2px solid #000; 
+  /* white-space: nowrap;  */
+  overflow:visible; 
+
+  text-align: center;
+  color: #b500ff;
+
+
+}
+.cursor {
+  border: 1px solid rgba(181, 0, 255, 255);
+}
+#typed-text {
+  color: rgba(43, 29, 83, 255);
+}
+.active {
+  color: #b500ff;
+  text-decoration: none;
+}
+.hero-para {
+  font-size: 12px;
+  color: rgba(43, 29, 83, 255);
+  font-family: sans-serif;
+}
+.service-card h3 {
+  font-weight: 700;
+}
+.service-card p {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.service-card a {
+  font-weight: 700;
+}
+.service-card-heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.carousel-img {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offer-heading {
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.offer-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.blog {
+  padding: 120px 0 90px;
+}
+.blog-content {
+  margin-top: 80px;
+}
+
+.single-blog-item {
+  margin-bottom: 30px;
+  box-shadow: 0 0px 5px rgba(71, 71, 71, 0.2);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-blog-item-txt {
+  padding: 25px 28px 27px;
+}
+.single-blog-item-txt h2 a {
+  text-transform: initial;
+}
+.single-blog-item-txt h5 {
+  /* font-size:  14px; */
+  color: #8f949d;
+  font-weight: 400;
+  /* margin: 12px 0 20px; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.single-blog-item-txt h4 a {
+  font-size: 14px;
+  padding-right: 14px;
+  border-right: 1px solid #dde0e4;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+/* .single-blog-item:hover h2 a {
+  color: #ff545a;
+} */
+.single-blog-item:hover {
+  box-shadow: 0 10px 20px rgba(21, 19, 19, 0.4);
+}
+
+.card-img {
+  border-radius: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.slider {
+  position: relative;
+  width: 960px;
+  height: 300px;
+  margin: 50px auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  transform: translatex(-50%);
+  z-index: 1000;
+
+  list-style: none;
+  text-align: center;
+}
+
+.slider input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #212121;
+  transition: background-color 0.2s linear;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #b500ff;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #b500ff;
+}
+
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #b500ff;
+}
+
+/* SLIDES */
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transform: translatex(-100%);
+  transition: transform 250ms linear;
+}
+
+.slide-content {
+  width: 400px;
+}
+
+.slide-title {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.slide-text {
+  margin-bottom: 20px;
+}
+
+.slide-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #ff4081;
+}
+
+.slide-image img {
+  max-width: 100%;
+}
+
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes swap-out {
+  0% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+
+.collaps-btn {
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}

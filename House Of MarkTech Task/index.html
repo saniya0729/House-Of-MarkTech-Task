@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Of MarkTech | Task</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/mediaquery.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css"
+      integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+    </style>
+  </head>
+  <body class="">
+    <nav class=" ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex-shrink-0 flex space-evenly">
+            <a href="#" class="text-xl font-bold"
+              ><img
+                src="/assets/images/logo.png"
+                alt=""
+                width="200px"
+                height="auto "
+                class="logo mb-10"
+            /></a>
+          </div>
+          <div
+            class="hidden desktop-menu-items md:flex md:items-center mt-2 md:space-x-2 nav-items mt-5"
+          >
+            <a
+              href="#"
+              class="hover:text-purple-800 active px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Our Work</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Blogs</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Case Study</a
+            >
+            <a
+              href=""
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Refferal</a
+            >
+            <a
+              href=""
+              class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+              >Pricing</a
+            >
+          </div>
+          <a href="#">
+            <butto
+            class="md:block hidden contact-btn mt-3 h-10 text-center mr-20 pl-4 pr-4 text-decoration-none relative top-5"
+            >
+              Login
+            </button></a
+          >
+
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="menu-toggle">
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="menu-items" class="menu-items md:hidden text-center fixed">
+        <a
+          href="#"
+          class="block text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium"
+          >Our Work</a
+        >
+        <a
+          href="#"
+          class="block text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium"
+          >Solution</a
+        >
+        <a
+          href="#"
+          class="block text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium"
+          >Blogs</a
+        >
+
+        <a
+          href="#"
+          class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+          >Case Study</a
+        >
+        <a
+          href=""
+          class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+          >Refferal</a
+        >
+        <a
+          href=""
+          class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-decoration-none"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="text-white mt-6 pt-8 px-4 bg-purple-500 hover:bg-purple-400 hover:text-white bold px-3 py-2 rounded-md font-medium"
+          >Login</a
+        >
+      </div>
+    </nav>
+
+    <div class="container md:mt-44">
+      <div class="row hero-section ">
+        <div class="col-md-5 hero-content md:mt-0 mt-3 md:text-left ">
+          <h1 class="hero-heading ">
+            <span class="hero-static-heading">Marketing Ignites, 
+              </span
+            >
+            <br><span id="typed-text"></span> <span class="cursor mt-3"></span>
+          </h1>
+          <p class="lead md:mb-4 mb-3 hero-para" style="font-size: 1.1rem">
+            We ignite your ideas with creative marketing, bring them to life
+            with cutting-edge technology, and propel your success with
+            exceptional sales. Ready to transform your vision into reality?
+            Let’s achieve greatness together!
+          </p>
+          <a
+            href=""
+            class="hero-btn md:mt-10 text-white text-decoration-none hover:bg-indigo-900 px-6"
+            >Let's Talk</a
+          >
+        </div>
+        <div class="col-md-5  hero-img">
+          <img src="assets/images/4.png" alt="" style="width: 100%" />
+        </div>
+      </div>
+
+      <div
+        class="max-width-[1440px] md:py-[80] py-3 mx-auto flex items-center md:mt-44 mt-8"
+      >
+        <h3 class="text-center mx-auto service-card-heading text-gray-500">
+          Struggling with Challenges in the Business Industry?
+        </h3>
+        <br />
+      </div>
+      <h3 class="text-center mx-auto service-card-heading text-gray-500">
+        House of Marktech Delivers 
+         <span  id="typing-effect"></span>
+      </h3>
+      <div
+        class="max-width-[1440px] mx-auto py-[30] mt-20 mb-20 grid lg:grid-cols-4 sm:grid-cols-2 gap-6"
+      >
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-cogs animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Lack of Innovation in Growth?</h3>
+          <p>We drive Growth through tech, data, and strategy.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-code animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">CodeWeak Brand Identity?</h3>
+          <p>We craft bold Branding with standout content.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-users animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Inefficient Operations?</h3>
+          <p>We optimize processes with streamlined Strategies.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-tv animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Outdated Websites & Apps?</h3>
+          <p>We build modern, high-performance Websites and Apps.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-lock animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Low Visual Appeal?</h3>
+          <p>We create stunning visuals with CGI and Animation.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-lock animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Unclear Marketing Strategy?</h3>
+          <p>We design data-driven, result-focused Marketing plans.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-lock animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Struggling to Scale in Competitive Markets?</h3>
+          <p>WWe Scale brands with innovative tech and insights.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+        <div
+          class="group shadow-lg p-3 service-card text-center hover:bg-purple-600 hover:text-white duration-1000"
+        >
+          <i
+            class="fa fa-cogs animate-bounce text-2xl text-purple-600 group-hover:text-white duration-1000"
+          ></i>
+          <h3 class="text-xl py-2">Need All Services in One Place?</h3>
+          <p>We offer full-service solutions—from Branding to Technology.</p>
+
+          <a href="" class="text-purple-600 group-hover:text-white">
+            Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-16">
+      <div class="row justify-content-center">
+        <h1 class="text-gray-500 offer-heading text-center md:m-4 md:pb-6">
+          Smart Growth starts here!
+        </h1>
+        <div class="col-md-6">
+          <div class="w-96 h- text-surface dark:text-black m4-6">
+            <h5 class="text-center text-gray-500">Our Services</h5>
+            <h5
+              aria-current="true"
+              class="cursor-pointer rounded-xl bg-purple-600 p-3 dark:text-purple-500 text-white hover:bg-purple-500 hover:text-black offer-text"
+            >
+              <i
+                class="fa fa-lock text-xl md:pl-2 text-white duration-1000"
+              ></i>
+              &nbsp; Visual Effects, Animation
+            </h5>
+          </div>
+          <div class="w-96 h- text-surface dark:text-black">
+            <h5
+              aria-current="true"
+              class="block w-full cursor-pointer rounded-xl bg-purple-600 p-3 dark:text-purple-500 text-white hover:bg-purple-500 hover:text-black offer-text"
+            >
+              <i class="fa fa-tv text-xl md:pl-2 text-white duration-1000"></i>
+              &nbsp; Website And App Development
+            </h5>
+          </div>
+          <div class="w-96 h- text-surface dark:text-black">
+            <h5
+              aria-current="true"
+              class="block w-full cursor-pointer rounded-xl bg-purple-600 p-3 dark:text-purple-500 text-white hover:bg-purple-500 hover:text-black offer-text"
+            >
+              <i
+                class="fab fa-android text-xl md:pl-2 text-white duration-1000"
+              ></i>
+              &nbsp; Social Media
+            </h5>
+          </div>
+          <div class="w-96 h- text-surface dark:text-black">
+            <h5
+              aria-current="true"
+              class="block w-full cursor-pointer rounded-xl bg-purple-600 p-3 dark:text-purple-500 text-white hover:bg-purple-500 hover:text-black offer-text"
+            >
+              <i
+                class="fa-solid fa-object-group text-xl md:pl-2 text-white duration-1000"
+              ></i>
+              &nbsp; Content Creation
+            </h5>
+          </div>
+          <div class="w-96 h- text-surface dark:text-black">
+            <h5
+              aria-current="true"
+              class="block w-full cursor-pointer rounded-xl bg-purple-600 p-3 dark:text-purple-500 text-white hover:bg-purple-500 hover:text-black offer-text"
+            >
+              <i
+                class="fa-solid fa-object-group  text-xl text-white duration-1000"
+              ></i>
+              &nbsp; Branding And Strategy
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-md-6 md:top-0 top-16">
+          <img src="assets/images/services.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- client section -->
+    <div class="client-section md:block hidden my-10">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-gray-600 sans-serif text-center">
+              What our valued clients say about us.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <input type="radio" name="toggle" id="btn-1" checked />
+        <input type="radio" name="toggle" id="btn-2" />
+        <input type="radio" name="toggle" id="btn-3" />
+
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <ul class="slides">
+          <li class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title text-purple-600">Saniya khan</h2>
+              <span>
+                <i class="fa-solid fa-computer"></i>
+                <span>TECHNOLOGY </span> &nbsp; &nbsp;
+                <i class="fa-solid fa-calendar"></i> <span>0 FEB, 2023 </span>
+              </span>
+              <h5 class="text-gray-500 pt-2">
+                "Working with this team has been an absolute pleasure. Their
+                attention to detail and commitment to quality is unmatched!"
+              </h5>
+              <a>
+                <button
+                  class="md:block hidden contact-btn mt-3 h-10 text-center mr-20 pl-3 pr-3 hover:bg-purple-400"
+                >
+                  Learn More
+                </button></a
+              >
+            </div>
+            <p class="slide-image">
+              <img
+                src="assets/images/news1.jpg"
+                alt="stuff"
+                width="320"
+                height="240"
+              />
+            </p>
+          </li>
+          <li class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title text-purple-600">Shoeb khan</h2>
+              <span>
+                <i class="fa-solid fa-pen-nib"></i> <span>DESIGN</span> &nbsp;
+                &nbsp; <i class="fa-solid fa-calendar"></i>
+                <span>02 NOV, 2023 </span>
+              </span>
+              <h5 class="text-gray-500 pt-2">
+                "Working with this team has been an absolute pleasure. Their
+                attention to detail and commitment to quality is unmatched!"
+              </h5>
+              <a>
+                <button
+                  class="md:block hidden contact-btn mt-3 h-10 text-center mr-20 pl-3 pr-3 hover:bg-purple-400"
+                >
+                  Learn More
+                </button></a
+              >
+            </div>
+            <p class="slide-image">
+              <img
+                src="assets/images/news2.jpg"
+                alt="stuff"
+                width="320"
+                height="240"
+              />
+            </p>
+          </li>
+          <li class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title text-purple-600">Muskan khan</h2>
+              <span>
+                <i class="fa fa-certificate" aria-hidden="true"></i
+                ><span>&nbsp; STARTUP </span> &nbsp; &nbsp;
+                <i class="fa-solid fa-calendar"></i> <span>03 SEP, 2024</span>
+              </span>
+              <h5 class="text-gray-500 pt-2">
+                "Working with this team has been an absolute pleasure. Their
+                attention to detail and commitment to quality is unmatched!"
+              </h5>
+              <a>
+                <button
+                  class="md:block hidden contact-btn mt-3 h-10 text-center mr-20 pl-3 pr-3 hover:bg-purple-400"
+                >
+                  Learn More
+                </button></a
+              >
+            </div>
+            <p class="slide-image">
+              <img
+                src="assets/images/news3.jpg"
+                alt="stuff"
+                width="320"
+                height="240"
+              />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container md:hidden block">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-gray-600 sans-serif text-center md:text-3xl text-2xl">
+            Our latest articles & resources
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container md:hidden block flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/news1.jpg" alt="" />
+          <p class="p-2">
+            <button
+              class="bg-purple-500 p-2 collaps-btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+            >
+              How is the technology working with new things?
+              <i class="fa-solid fa-list-dropdown"></i>
+            </button>
+          </p>
+          <div style="min-height: 100px">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 300px">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
+                ut.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <footer
+        class="text-center text-lg-start text-white max-width-[1440px]"
+        style="background-color: #1c2331"
+      >
+        <section
+          class="d-flex justify-content-between p-4"
+          style="background-color: #6351ce"
+        >
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+
+          <div>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+       
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+                <h6 class="text-uppercase fw-bold">Office Address</h6>
+                <hr
+                class="mt-4  d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  1410p Gurgaon
+                  
+                  Sector 46, E block
+                  
+                  Bharat City Ghaziabad 
+                </p>
+                
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold">Legal</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-white">Terms and Conditions</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Privacy Policy</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Cancellation Policy</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Frequently Asked Questions</a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-white">Careers</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Blogs</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Case Studies</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Referral Program</a>
+                </p>
+              </div>
+              
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p><i class="fas fa-envelope mr-3"></i> Marketing@houseofmarktech.com</p>
+                <p><i class="fas fa-phone mr-3"></i>+91 9773989305</p>
+                <p><i class="fas fa-print mr-3"></i>+91 8287108009</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </footer>
+      <!-- Footer -->
+    </div>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
